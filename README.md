@@ -2,8 +2,6 @@
 
 A modern web application for creating and visualizing diagrams using Mermaid syntax with live preview.
 
-![Mermaid Visualizer Screenshot](https://raw.githubusercontent.com/mermaid-js/mermaid/develop/docs/public/favicon.svg)
-
 ## ✨ Features
 
 - **Live Preview** - See your diagrams update in real-time as you type
@@ -27,7 +25,7 @@ A modern web application for creating and visualizing diagrams using Mermaid syn
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/arcanine525/mermaid-diagram
 cd mermaid-diagram
 
 # Install dependencies
@@ -45,6 +43,18 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 npm run build
 npm run preview
 ```
+
+### 🐳 Docker Deployment
+
+```bash
+# Build Docker image
+docker build -t mermaid-visualizer .
+
+# Run container
+docker run -d -p 8080:80 mermaid-visualizer
+```
+
+Open [http://localhost:8080](http://localhost:8080) in your browser.
 
 ## ⌨️ Keyboard Shortcuts
 
